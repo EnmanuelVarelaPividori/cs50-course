@@ -1,0 +1,84 @@
+img {
+    width: 270px;
+}
+
+/*Top Section*/
+#top {
+    display: grid;
+    grid-template-columns: 1fr 60px 120px;
+    grid-template-rows: 50px;
+}
+a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(0, 0, 0, 0.87);
+    justify-self: center;
+    align-self: center;
+    font-size: 13px;
+}
+a:hover{
+    text-decoration: underline;
+    color: #616161;
+}
+/*Main Section*/
+#main {
+    display: grid;
+    grid-template-columns: 1fr 482px 1fr;
+    grid-template-rows: 225px 44px 70px 400px;
+    grid-template-areas: 
+    ". logo ."
+    ". q ."
+    ". flexbox ."
+    ". space-2 ." ;
+}
+#logo {
+    grid-area: logo;
+    justify-self: center;
+    align-self: end;
+    padding-bottom: 32px;
+    padding-left: 2px;
+}
+#q{
+    grid-area: q;
+    border-radius: 25px;
+    border: 1px #cccccc;
+    border-style: solid;  
+    padding-left: 20px; 
+}
+#q:focus, #q:hover{
+    box-shadow: 1px 1px 5px #B8B8B8;
+}
+#flexbox {
+    display: flexbox;
+    grid-area: flexbox;
+    padding-top: 10px;
+    justify-self: center;
+    align-self: center;
+}
+#search-button{
+    grid-area: search-button;
+}
+#feeling-lucky-button{
+    grid-area: feeling-lucky-button;
+}
+#search-button, #feeling-lucky-button {
+    border: none;
+    border-radius: 4px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 18px;
+    padding-right: 18px;
+    color: #616161;
+    background-color: #F2F2F2;
+    margin: 2px;
+    font-size: 14px;
+}
+#search-button:hover, #feeling-lucky-button:hover {
+    border: 1px #C0C0C0;
+    border-style: solid;
+    color: black;
+    box-shadow: 1px 1px 1px #E5E5E5;
+}
+#space-2 {
+    grid-area: space-2;
+}
